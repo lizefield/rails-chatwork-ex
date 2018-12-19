@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Chatwork APIを利用するサンプル  
+とりあえずGETのみ
 
-Things you may want to cover:
+## Token設定
 
-* Ruby version
+以下にChatworkで取得したtokenを設定する
 
-* System dependencies
+```app/controllers/chatwork_controller.rb
+API_TOKEN = 'xxxxx'
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+get_from_chatworkの引数のエンドポイントを変更することでGETをサンプル的に使える  
+http://developer.chatwork.com/ja/endpoints.html
